@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5f59ca6ad3.js" crossorigin="anonymous"></script>
+
+    <link rel=" stylesheet" href="style.css"/>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title-heading">User Profile Generator</h1>
+        <div id="cardsContainer" class="row">
+            <div class="col-12 mb-5">
+                <div class="d-flex justify-content-center">
+                    <div class="profile-cards-container">
+                        <div class="profile-cards">
+                            <img id="cardPic" class="profile-picture rounded-circle" src="https://res.cloudinary.com/dkr51xeft/image/upload/v1743845001/searching_logo.png" />
+                            <div>
+                                <button id="cardsSaveBtn" class="btn btn-dark buttons">Save</button>
+                                <ul class="profile-cards-details mt-2">
+                                    <li>Age: <span id="cardAge"></span></li>
+                                    <li>Gender: <span id="cardGender"></span></li>
+                                    <li>Ph N: <span id="cardPhone"></span></li>
+                                    <li>Email: <span id="cardEmail"></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="name-and-button-container">
+                            <h1 id="cardName" class="name">Hena Devi Mss</h1>
+                            <button id="newProfileBtn" class="btn btn-success new-profile-btn">New Profile</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <h1 class="title-heading mt-3 mb-0">Saved Cards</h1>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
+
+
+
+<!-- Working Steps of Design
+
+Design Flow 
+1. ek card static rahega html se with "new profile" and "save button" buttons and all others card dynamic honge js created ok 
+
+Ui kaisi rahegi ?
+1. single static card jo hoga wo change hoga new user button pe ok and save karenge to wo below card container me append hoga 
+2. 4 cards always visible rahenge + new user details jo saved honge wo bhi visible rahenge but wo delete karne pe delete honge 
+
+-->
